@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <div class="bg">
+        <div class="chooser absolute">
+            <select id="select">
+                <option value="50">50</option>
+                <option value="25">25</option>
+                <option value="10">10</option>
+                <option value="5">5</option>
+                <option value="2">2</option>
+                <option value="1">1</option>
+            </select>
+            <button><a href="">↺</a></button>
+        </div>
+        <div class="map">
+            <div class="cube" id="cube">
+                <div class="eye"></div>
+                <div class="eye"></div>
+            </div>
+            <div class="spot" id="spot"></div>
+        </div>
+        <div class="control absolute">
+            <div class="flex">
+                <button id="btn1"><i class="fa-solid fa-chevron-left"></i></button>
+                <button id="btn2"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+            <div class="flex">
+                <button id="btn3"><i class="fa-solid fa-chevron-up"></i></button>
+                <button id="btn4"><i class="fa-solid fa-chevron-down"></i></button>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

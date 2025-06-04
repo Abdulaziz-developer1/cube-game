@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    transition: all 0.3s;
+}
+
+.bg {
+    width: 100vw;
+    height: 100vh;
+    background-color: deepskyblue;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.absolute {
+    position: absolute;
+    z-index: 999;
+}
+
+.chooser {
+    top: 20px;
+    left: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 90vw;
+}
+
+#select {
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 1.5em;
+    background: transparent;
+}
+
+.map {
+    width: 70vw;
+    height: 80vh;
+    background-color: blue;
+    border: 2px solid;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.cube {
+    width: 35px;
+    height: 35px;
+    background-color: orange;
+    border-radius: 5px;
+    border: 2px solid;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+    animation: cube 2s infinite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+}
+
+.eye {
+    width: 10px;
+    height: 5px;
+    background: #000;
+}
+
+.spot {
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    border: 2px solid orange;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.control {
+    width: 90vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    bottom: 50px;
+    align-items: center;
+}
+
+.flex {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.flex button {
+    width: 60px;
+    height: 60px;
+    border: 2px solid;
+    border-radius: 10px;
+    background: transparent;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+@keyframes cube {
+    50% {
+        width: 40px;
+        height: 30px;
+    }
+}
+
+.chooser button{
+    background: transparent;
+    font-size: 3em;
+    border: none;
+}
+
+.chooser button a{
+    text-decoration: none;
+    color: #000;
+}
